@@ -338,9 +338,34 @@ body {
   .hero-actions {
     flex-direction: column;
   }
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .scroll-to-top svg.arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (max-width: 768px) {
+
+    /* SCROLL-TO-TOP */
+
+    .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .scroll-to-top svg.arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
 
   /* NAVBAR */
   .navbar-container {
@@ -446,6 +471,50 @@ body {
   opacity: 0.7;
 }
 
+/* Scroll to Top Premium */
+.scroll-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scroll-to-top svg.arrow-icon {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(135deg, var(--primary), #0a2d4c);
+}
+
+.scroll-to-top:hover svg.arrow-icon {
+  transform: translateY(-4px);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* ANIMACIONES SUAVES */
 .fade-in {
