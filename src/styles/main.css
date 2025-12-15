@@ -1,66 +1,176 @@
-/* NAVBAR */
-.navbar {
-  background-color: #111;
-  padding: 1.2rem 2rem;
-  border-bottom: 1px solid #333;
+:root {
+  --primary: #0b3c5d;   /* azul juridico */
+  --secondary: #1c1c1c;
+  --text: #333;
+  --bg-light: #f7f9fb;
+  --border: #e0e0e0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+section p {
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid var(--border);
+  background-color: white;
+  padding: 0.3rem 0;
+}
+
+
 .navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.2rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+}
+
+.navbar a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: var(--primary);
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: #e6c07b; /* dorado sobrio */
+  font-size: 1.35rem;
+  font-weight: 600; /* semibold */
+  letter-spacing: 0.5px;
+  color: var(--primary);
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 .nav-links li {
-  color: #ddd;
-  font-weight: 400;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .nav-links li:hover {
-  color: #e6c07b;
-  text-decoration: none;
+  color: var(--primary);
 }
 
 /* HERO */
 .hero {
-  padding: 6rem 2rem;
-  text-align: center;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.65)
-  ),
-  url("https://images.unsplash.com/photo-1521791136064-7986c2920216");
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background-color: #f9fafb;
+  padding: 5rem 1.5rem;
+}
+
+.hero-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #e6e6e6;
+  font-size: 1.05rem;
+  color: var(--secondary);
+  max-width: 650px;
+  margin-bottom: 2.2rem;
+  line-height: 1.6;
 }
+
+.hero-button {
+  display: inline-block;
+  background-color: #0b4a75;
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  transform: translateY(-2px);
+}
+
+.hero-button:hover {
+  background-color: #0b4a75;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.whatsapp-cta {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 6px;
+  border: 1px solid #25d366;
+  color: #25d366;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.whatsapp-cta:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+
 
 body {
   margin: 0;
@@ -85,26 +195,60 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
+  margin-top: 3rem;
 }
 
 .service-card {
-  background-color: white;
+  border: 1px solid var(--border);
   padding: 2rem;
-  border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: white;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .service-card h3 {
-  margin-bottom: 1rem;
-  color: #111;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
 }
 
 .service-card p {
   color: #555;
   line-height: 1.6;
 }
+
+.service-icon {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* WHATSAPP BOTTON */
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.8rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #25d366; /* verde WhatsApp */
+  transform: translateY(-2px);
+}
+
 
 /* ABOUT */
 .about {
@@ -190,6 +334,12 @@ body {
 }
 
 /* RESPONSIVE */
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
 
   /* NAVBAR */
@@ -210,11 +360,11 @@ body {
   }
 
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   /* SERVICES */
@@ -241,6 +391,76 @@ body {
     font-size: 1.4rem;
   }
 }
+/* FOOTER */
+.footer {
+  background-color: #0b2d45;
+  color: #ffffff;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-brand h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.footer-brand p {
+  max-width: 300px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.footer-contact h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #e6c07b;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+
+/* ANIMACIONES SUAVES */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 

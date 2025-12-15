@@ -5,11 +5,10 @@ function Navbar() {
         <h2 className="logo">Estudio Jurídico Santos&Arévalo</h2>
 
         <ul className="nav-links">
-          <li>Inicio</li>
-          <li>Acerca de Nosotros</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
-        </ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
       </div>
     </nav>
   );

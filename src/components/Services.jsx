@@ -1,10 +1,11 @@
 function Services() {
   return (
-    <section className="services">
+    <section id="servicios" className="services fade-in">
       <h2>Servicios Legales</h2>
 
       <div className="services-grid">
         <div className="service-card">
+          <span className="service-icon">⚖️</span>
           <h3>Derecho Civil</h3>
           <p>
             Asesoramiento y representación en contratos, daños y perjuicios,
@@ -13,6 +14,7 @@ function Services() {
         </div>
 
         <div className="service-card">
+          <span className="service-icon">🏛️</span>
           <h3>Derecho Penal</h3>
           <p>
             Defensa penal integral en todas las etapas del proceso, con
@@ -21,6 +23,7 @@ function Services() {
         </div>
 
         <div className="service-card">
+          <span className="service-icon">👥</span>
           <h3>Derecho Laboral</h3>
           <p>
             Asistencia legal a trabajadores y empleadores en despidos,
@@ -29,6 +32,7 @@ function Services() {
         </div>
 
         <div className="service-card">
+          <span className="service-icon">📄</span>
           <h3>Asesoramiento Empresarial</h3>
           <p>
             Consultoría jurídica para empresas y emprendedores, prevención de
