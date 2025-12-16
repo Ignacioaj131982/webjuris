@@ -5,6 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsappFloat from "./components/WhatsappFloat";
 import "./styles/main.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Contact />
       <Footer />
       <ScrollToTop />
+      <WhatsappFloat />
     </>
   );
 }

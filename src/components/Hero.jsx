@@ -3,35 +3,34 @@ function Hero() {
     <section className="hero">
       <div className="hero-container">
         <h1>
-          Estudio Jurídico<br />
+          Abogados en Rosario<br />
           Santos & Arévalo
         </h1>
 
         <p>
-          Asesoramiento legal integral, serio y personalizado.
-          Acompañamos a nuestros clientes con compromiso, ética
-          y experiencia profesional.
+          Asesoramiento legal claro y personalizado para personas y empresas.
+          Te ayudamos en despidos y accidentes de trabajo, accidentes de tránsito,
+          sucesiones e incumplimientos contractuales.
         </p>
 
         <div className="hero-actions">
-          <a href="#contacto" className="hero-button">
-            Solicitar consulta
-          </a>
+  <a
+    href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20jur%C3%ADdica."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-cta"
+  >
+    Consultar por WhatsApp
+  </a>
 
-          <a
-            href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20jur%C3%ADdica."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="whatsapp-cta"
-          >
-            WhatsApp
-          </a>
-        </div>
+  <a href="#contacto" className="hero-button">
+    Ver contacto
+  </a>
+</div>
+
       </div>
     </section>
   );
 }
 
 export default Hero;
-
-

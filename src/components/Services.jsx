@@ -4,44 +4,84 @@ function Services() {
       <h2>Servicios Legales</h2>
 
       <div className="services-grid">
+
         <div className="service-card">
-          <span className="service-icon">⚖️</span>
-          <h3>Derecho Civil</h3>
+          <span className="service-icon">👷‍♂️</span>
+          <h3>Despidos y Accidentes de Trabajo</h3>
           <p>
-            Asesoramiento y representación en contratos, daños y perjuicios,
-            sucesiones y conflictos civiles en general.
+            Asistencia legal a trabajadores y empleadores en despidos sin causa,
+            indemnizaciones, accidentes laborales y conflictos de trabajo.
           </p>
+
+          <a
+            href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20por%20un%20caso%20laboral."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta"
+          >
+            Consultar por WhatsApp
+          </a>
         </div>
 
         <div className="service-card">
-          <span className="service-icon">🏛️</span>
-          <h3>Derecho Penal</h3>
+          <span className="service-icon">🚗</span>
+          <h3>Accidentes de Tránsito</h3>
           <p>
-            Defensa penal integral en todas las etapas del proceso, con
-            compromiso y confidencialidad.
+            Reclamos por accidentes de tránsito, daños materiales, lesiones,
+            gastos médicos y gestiones ante compañías aseguradoras.
           </p>
+
+          <a
+            href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20por%20un%20accidente%20de%20tr%C3%A1nsito."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta"
+          >
+            Consultar por WhatsApp
+          </a>
         </div>
 
         <div className="service-card">
-          <span className="service-icon">👥</span>
-          <h3>Derecho Laboral</h3>
+          <span className="service-icon">📜</span>
+          <h3>Sucesiones</h3>
           <p>
-            Asistencia legal a trabajadores y empleadores en despidos,
-            indemnizaciones, accidentes de trabajo y conflictos laborales.
+            Asesoramiento integral en sucesiones, herencias, declaratorias,
+            particiones y trámites judiciales vinculados al proceso.
           </p>
+
+          <a
+            href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20por%20una%20sucesi%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta"
+          >
+            Consultar por WhatsApp
+          </a>
         </div>
 
         <div className="service-card">
           <span className="service-icon">📄</span>
-          <h3>Asesoramiento Empresarial</h3>
+          <h3>Incumplimientos Contractuales</h3>
           <p>
-            Consultoría jurídica para empresas y emprendedores, prevención de
-            riesgos legales y cumplimiento normativo.
+            Conflictos por contratos incumplidos, alquileres, compraventas,
+            acuerdos comerciales y reclamos civiles en general.
           </p>
+
+          <a
+            href="https://wa.me/5493416943513?text=Hola%20quisiera%20realizar%20una%20consulta%20por%20un%20incumplimiento%20contractual."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta"
+          >
+            Consultar por WhatsApp
+          </a>
         </div>
+
       </div>
     </section>
   );
 }
 
 export default Services;
+
+
